@@ -17,15 +17,10 @@ def star(n: int, array: list) -> list:
         return array
     else: 
         for i in array:            
-            array.append(i*3)
-            array.append(i*3)
-            array.append(i*3)
-            # array.append(i)
-            # array.append('***')
-        return star(n//3)
-            
-
-    # return star(n/3) + star(n/3)
+            lists.append(i*3)
+            lists.append(i+" "+i)
+            lists.append(i*3)
+        return star(n//3, lists)
 
 star_list = ["***", "* *", "***"]
-print("\n".join(star(n)))
+print("\n".join(star(n, star_list)))
