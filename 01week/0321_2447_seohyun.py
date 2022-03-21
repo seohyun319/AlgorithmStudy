@@ -5,13 +5,21 @@ put = sys.stdin.readline
 
 # 재귀로 별 찍기
 
-n:int = int(put())
-array:list = []
 def star(n: int) -> str:
+    array:list = []
     if n == 3:
-        array.append('***')
-        array.append('* *')
-        array.append('***')
-        return array
-    return star(n/3) + star(n/3)
+        return ['***', '* *', '***']
+    
+    # 이전 단계의 별
+    star_list = star(n//3)
+
+    for i in star_list:
+        array.append(i*3)
+    for i in star_list: # 공백은 i 크기만큼. 
+        array.append(i + ' '*len(i) + i)
+    for i in star_list:
+        array.append(i*3)
+    return array
+
+n:int = int(put())
 print("\n".join(star(n)))
