@@ -14,6 +14,6 @@ def append_star(n):
 
     return list_star
 
-N = int(input())
+N = int(input()) 
 print('\n'.join(append_star(N)))
 
