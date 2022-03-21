@@ -6,5 +6,5 @@ def fibo(i):
     else:
         return fibo(i-1) + fibo(i-2)
 
-n = int(input())
+n = int(input()) 
 print(fibo(n))
