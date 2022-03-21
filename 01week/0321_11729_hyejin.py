@@ -7,7 +7,7 @@ def hanoi(n, start, end):
     print(start, end)
     hanoi(n-1, 6-start-end, end)
 
-N = int(input())
+N = int(input()) 
 print(2**N-1)
 hanoi(N, 1, 3)
     
