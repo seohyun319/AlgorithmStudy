@@ -15,4 +15,4 @@ def insert_sort(array):
                 array[j] = key
     return array
             
-print(insert_sort(make_array()))
+print(*insert_sort(make_array()), sep='\n')
