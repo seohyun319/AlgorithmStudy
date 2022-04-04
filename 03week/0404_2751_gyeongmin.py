@@ -1,9 +1,9 @@
 #2751
-# n = int(input())
-# array = list()
-# for i in range(n):
-#     array.append(int(input()))
-# print("초기", array)
+n = int(input())
+array = list()
+for i in range(n):
+    array.append(int(input()))
+print("초기", array)
 
 # def merge_sort(array):
 
