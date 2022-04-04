@@ -1,5 +1,3 @@
-import math
-
 global count
 count = 0
 
