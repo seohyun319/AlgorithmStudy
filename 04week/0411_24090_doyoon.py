@@ -9,8 +9,11 @@ def partition(a, start, end):
     count = 0
     pivot = a[end]
     i = start
-    for j in range(start, end):
+    for j in range(start, end-1):
         if a[j] <= pivot:
+            count += 1
+            if count == k:
+                print(array[i], array[j])
             a[i], a[j] = a[j], a[i]
             i += 1
     count += 1 
