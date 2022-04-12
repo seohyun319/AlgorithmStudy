@@ -13,8 +13,8 @@ def merge_sort(array: list) -> list:
         return array
 
     mid = len(array) // 2
-    left_array = merge_sort(array[mid:])
-    right_array = merge_sort(array[:mid])
+    left_array = merge_sort(array[:mid])
+    right_array = merge_sort(array[mid:])
 
     result: list = []
     while left_array and right_array:
