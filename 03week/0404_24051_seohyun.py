@@ -19,7 +19,8 @@ def insert_sort(array: list):
             array[j+1] = array[j]
             j -= 1
 
-        if j+1 != i:
+        # 이미 맞는 자리에 있으면 안 함.
+        if j+1 != i:  # 맞지 않은 자리에 있으면~
             save_num.append(key)
             array[j+1] = key
 
