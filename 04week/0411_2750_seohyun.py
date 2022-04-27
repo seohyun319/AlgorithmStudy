@@ -1,5 +1,4 @@
-# silver5. 수 정렬하기 5
-# 메모리 초과
+# bronze1. 수 정렬하기 1 - 퀵정렬로 풀기
 
 import sys
 put = sys.stdin.readline
