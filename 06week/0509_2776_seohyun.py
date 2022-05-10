@@ -1,5 +1,7 @@
 # silver4. 암기왕
 
+# for i in num2 이 문장에서 for in이 O(N)이라서 시간초과난 듯
+
 import sys
 put = sys.stdin.readline
 
