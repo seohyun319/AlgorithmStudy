@@ -15,3 +15,4 @@ while start <= end:
     else:
         end = mid - 1
 print(end)
+

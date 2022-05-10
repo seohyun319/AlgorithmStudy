@@ -13,3 +13,4 @@ for _ in range(t):
             print(0)
            
 # 시간 초과?! 
+
