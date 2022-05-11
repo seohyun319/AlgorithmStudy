@@ -8,25 +8,25 @@
 성질을 만족하는 **이진트리**
 
 (중복되는 원소는 없는 것으로 가정)
-
+<br>
 ### ⏩ 시간 복잡도
 
 평균적으로 노드의 개수, 즉 데이터 원소의 개수를 n이라고 할 때 log(n)에 비례
-
+<br>
 ### ⏩ 이진 검색 트리에서 값의 검색
 
  ***루트보다 작을 경우 : 왼쪽부터 찾기***
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/403b45b2-9868-4c35-9147-ce5bc71c3a2c/Untitled.png)
+<img width="674" alt="Untitled (1)" src="https://user-images.githubusercontent.com/61955796/167764625-186dcb27-f80c-4ac1-9969-1478a67a94e7.png">
 
 ***루트보다 클 경우 : 오른쪽부터 찾기***
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0409e3ee-04b9-4a7c-a270-5c140a8b42fa/Untitled.png)
-
+<img width="683" alt="Untitled (2)" src="https://user-images.githubusercontent.com/61955796/167764638-9d9e8397-af8c-47e8-989d-e6e4b8891891.png">
+<br>
 ### ⏩ 이진 검색 트리에서 값의 삽입
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/de0e209a-4625-44a3-ac39-a464c1077b0a/Untitled.png)
-
+<img width="694" alt="Untitled (3)" src="https://user-images.githubusercontent.com/61955796/167764658-0dcbdc47-fbd1-4dc3-8988-6fdbf3454622.png">
+<br>
 ### ⏩ 이진 검색 트리 구현
 
 ```python
@@ -48,8 +48,8 @@ class BinarySearchTree(object):
 
 - root라는 노드부터 시작하는 걸로 정의
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/270714ae-1f24-4303-98d0-1872039518f2/Untitled.png)
-
+<img width="425" alt="Untitled (4)" src="https://user-images.githubusercontent.com/61955796/167764686-480c6852-3892-46ca-85eb-a77330375447.png">
+<br>
 ### ⏩ 이진 검색 트리 값의 삽입 구현
 
 ```python
@@ -84,7 +84,7 @@ for x in array:
 ```
 
 즉, bst 객체의 멤버 변수 root를 트리의 뿌리로 하는 이진 검색 트리를 생성하는 코드
-
+<br>
 ### ⏩ 이진 검색 트리 값의 검색 구현
 
 ```python
@@ -106,8 +106,8 @@ print(bst.search_recursive(bst.root, 17))
 - return [node.data](http://node.data) == data 는 안될까?
     
     : 노드가 None이면 데이터 자체를 확인할 수 없기 때문에 재귀를 위해 node가 None이 아니라는 사실을 반환한다.
-    
 
+<br>
 ### ⏩ 이진 검색 트리 값의 삽입 구현 LOOP ver.
 
 ```python
@@ -144,7 +144,7 @@ for x in array:
 - 재귀는 함수 자체에 부모 노드가 있어야 호출이 가능하다.
 - 하지만 while문은 insert의 인자에 root를 넣을 필요가 없다.
 - 즉, while문은 함수 인자가 깔끔해지고 재귀는 코드 자체가 깔끔해진다. (하지만 상관없음!!)
-
+<br>
 ### ⏩ 이진 검색 트리 값의 검색 구현 LOOP ver.
 
 ```python
@@ -169,8 +169,8 @@ print(bst.search(17)) #False
 
 ### ⏩ 트리의 순회
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/42696ebe-0c9f-465b-9eaf-01018f8bf803/Untitled.png)
-
+<img width="684" alt="Untitled (5)" src="https://user-images.githubusercontent.com/61955796/167764715-8c546154-2726-4141-85ee-62a137085e33.png">
+<br>
 ### ⏩ 트리 너비 우선 검색 구현 (Breadth-first Search)
 
 ```python
@@ -200,10 +200,10 @@ bst.breadthfirst(bst.root)
 
 - 자식 넣고 루트를 지우는 방식
 - 트리는 중복을 생각할 필요가 없다
-
+<br>
 ### ⏩ 트리 깊이 우선 검색 (Depth-first Search
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9b30505d-ffbe-4f8d-b828-dc8ad2115852/Untitled.png)
+<img width="671" alt="Untitled (6)" src="https://user-images.githubusercontent.com/61955796/167764732-728ff489-a4aa-4f4a-885f-be36fd17bf0c.png">
 
 ```python
 class BinarySearchTree(object):
@@ -240,16 +240,16 @@ bst.everyorder(bst.root)
 두 번째 나온 숫자만 고르면 → 중위 순회
 
 마지막으로 나온 숫자만 고르면 → 후위 순회
-
+<br>
 ### ⏩ 전위, 중위, 후위
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b8f9caa7-b465-4a70-9ff4-fd3504f6cde5/Untitled.png)
+<img width="677" alt="Untitled (7)" src="https://user-images.githubusercontent.com/61955796/167764767-f0e75204-ba5f-41f1-8087-deb394ab0354.png">
 
 - 전위 순회 (pre-order) : 루트 먼저 방문하는 방식 : root -> left -> right
 - 중위 순회 (in-order) : 왼쪽 하위 트리 방문 후 루트를 방문하는 방식 : left -> root -> right
 - 후위 순회 (post-order) : 왼쪽 하위 트리부터 모두 방문 후 루트 방문하는 방식 : left -> right -> root
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/65620908-1a1a-479a-a3fe-e780c995e8fe/Untitled.png)
+<img width="689" alt="Untitled (8)" src="https://user-images.githubusercontent.com/61955796/167764775-6dca9831-0c5f-4134-98b7-2554fb4735a5.png">
 
 ```python
 class BinarySearchTree(object):
