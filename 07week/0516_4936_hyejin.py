@@ -3,7 +3,6 @@ put = sys.stdin.readline
 
 def island_num():
     island_map = []
-    count = 0
     while True:
         w, h = map(int, put().split())
         
