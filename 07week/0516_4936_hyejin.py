@@ -15,7 +15,5 @@ def island_num():
             one_map.append(list(map(int, put().split())))
 
         island_map.append(one_map)
-
-        count += 1
         
 island_num()
