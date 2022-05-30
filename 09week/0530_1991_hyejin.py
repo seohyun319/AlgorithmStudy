@@ -28,7 +28,7 @@ class BinarySearchTree(object):
                 if right_data == '.':
                     node.right = None
                 else:
-                    node.right = self.inset_recursive(node.right, right_data, no_child, no_child)
+                    node.right = self.insert_recursive(node.right, right_data, no_child, no_child)
         return node
 
     #전위순회
@@ -62,9 +62,7 @@ class BinarySearchTree(object):
             
             print(node.data)
 
-
-
-
+            
 n = int(input())
 bst = BinarySearchTree()
 
@@ -75,5 +73,3 @@ for i in range(n):
 bst.preorder(bst.root)
 bst.inorder(bst.root)
 bst.postorder(bst.root)
-
-
