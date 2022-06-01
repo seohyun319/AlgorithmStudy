@@ -1,5 +1,3 @@
-# 10주
-
 ## 그래프 (Graph)
 
 - 현상이나 사물을 정점 vertex (노드 node)과 간선 edge으로 표현한 것
@@ -14,7 +12,7 @@ E : 간선 집합
     > 
 - 두 정점이 간선으로 연결됨 == 인접 adjacent하다, 이웃 관계에 있다
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/10e86442-caee-4f70-95b8-3f9ffc100674/Untitled.png)
+    ![image](https://user-images.githubusercontent.com/76686872/171328617-b9698839-53d7-4fca-9290-36e8119210b7.png)
     
 - 경로 (Path)
     - 정점 A에서 C까지의 경로는 A-B-C, A-E-B-C, A-D-C 등이 있음
@@ -25,9 +23,9 @@ E : 간선 집합
         - 간선에 방향이 없는 그래프 (Weighted Undirected Graph)
         - 간선에 방향이 있는 그래프 (Weighted Directed Graph)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f0ee4add-65a4-4022-9514-ffbd11834977/Untitled.png)
+![image](https://user-images.githubusercontent.com/76686872/171328652-880dc82b-447f-4df8-84c4-99b6767d7a6a.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/62c8f905-1740-4a7e-9890-1e7b596f6291/Untitled.png)
+![image](https://user-images.githubusercontent.com/76686872/171328684-95e2a038-0b70-462e-b64c-c3ec993ae83b.png)
 
 ---
 
@@ -47,7 +45,7 @@ E : 간선 집합
     - • 원소 (i, j) == 1 : 정점 i 와 정점 j 사이에 간선이 있음 (인접함)
     • 원소 (i, j) == 0 : 정점 i 와 정점 j 사이에 간선이 없음 (인접 X)
         
-        ![가중치 없는 방향 그래프](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/14888447-5147-4ac2-9202-ce5cae700bcf/Untitled.png)
+        ![image](https://user-images.githubusercontent.com/76686872/171328735-9c5d0515-3c9c-4177-b615-9a408eb6103e.png)
         
         가중치 없는 방향 그래프
         
@@ -70,15 +68,15 @@ E : 간선 집합
 - i번째 리스트는 정점 i에 인접한 정점들을 리스트로 연결
     - 무향 그래프에서 총 간선 수의 두 배의 항목으로 표현
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7b82b790-7f7e-4e8e-88c4-dd95a48ca2e7/Untitled.png)
+        ![image](https://user-images.githubusercontent.com/76686872/171328888-2a360d09-138e-4173-90f8-50baad9c39bf.png)
         
     - 유향 그래프에서 간선 하나 당 항목 하나씩 필요
         
-        ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/85c13462-e2a8-40e4-89be-a0c026335a4d/Untitled.png)
+        ![image](https://user-images.githubusercontent.com/76686872/171328931-0e51ee5c-944c-4478-a72e-5bffc3e17282.png)
         
 - 가중치 (Weighted) 있는 그래프의 경우: 리스트에 가중치 (Weight)도 보관
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/11b47c88-0d91-4bc2-a521-c9c820312df2/Untitled.png)
+    ![image](https://user-images.githubusercontent.com/76686872/171328961-4a51c941-39e8-4ab9-b4e1-f54fb1db55ef.png)
     
 - 인접 리스트 (Adjacency List) 장단점
     - 장점
