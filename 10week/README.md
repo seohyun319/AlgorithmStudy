@@ -1,18 +1,19 @@
 ## 그래프 (Graph)
 
 - 현상이나 사물을 정점 vertex (노드 node)과 간선 edge으로 표현한 것
-- Graph G = (V, E)
-V : 정점 집합
-E : 간선 집합
+- Graph G = (V, E) <br />
+V : 정점 집합<br />
+E : 간선 집합<br />
     
-    > 정점: 사람.
-    간선: 사람간의 친구 관계. 친밀도(촌수)
-    직접 연결) 친구(일촌). 직접 아는 사이
-    간접 연결) 친친(친척). 직간접적으로 아는 모든 사람
+    > 정점: 사람.<br />
+    > 간선: 사람간의 친구 관계. 친밀도(촌수)<br />
+    > 직접 연결) 친구(일촌). 직접 아는 사이<br />
+    > 간접 연결) 친친(친척). 직간접적으로 아는 모든 사람<br />
     > 
 - 두 정점이 간선으로 연결됨 == 인접 adjacent하다, 이웃 관계에 있다
     
     ![image](https://user-images.githubusercontent.com/76686872/171328617-b9698839-53d7-4fca-9290-36e8119210b7.png)
+    > 그림 배경투명화 돼있어서 dark mode에서는 제대로 안 보입니다
     
 - 경로 (Path)
     - 정점 A에서 C까지의 경로는 A-B-C, A-E-B-C, A-D-C 등이 있음
@@ -23,17 +24,16 @@ E : 간선 집합
         - 간선에 방향이 없는 그래프 (Weighted Undirected Graph)
         - 간선에 방향이 있는 그래프 (Weighted Directed Graph)
 
-![image](https://user-images.githubusercontent.com/76686872/171328652-880dc82b-447f-4df8-84c4-99b6767d7a6a.png)
-
-![image](https://user-images.githubusercontent.com/76686872/171328684-95e2a038-0b70-462e-b64c-c3ec993ae83b.png)
+            <img src="https://user-images.githubusercontent.com/76686872/171328652-880dc82b-447f-4df8-84c4-99b6767d7a6a.png" width=200px />   <img src="https://user-images.githubusercontent.com/76686872/171328684-95e2a038-0b70-462e-b64c-c3ec993ae83b.png" width=200px />
+            
 
 ---
 
 ## 그래프 표현법
 
-- 그래프는 정점의 집합과 간선의 집합의 결합
-→ 그래프를 표현하는 문제는 “정점의 집합”과 “간선의 집합”의 표현 문제
-→ 간선은 정점과 정점이 “인접” 관계에 있음을 나타내는 존재
+- 그래프는 정점의 집합과 간선의 집합의 결합<br />
+→ 그래프를 표현하는 문제는 “정점의 집합”과 “간선의 집합”의 표현 문제<br />
+→ 간선은 정점과 정점이 “인접” 관계에 있음을 나타내는 존재<br />
 → 그래프의 표현 문제는 “**간선, 즉 정점과 정점의 인접 관계를 어떻게 나타내는가?**”의 문제로 귀결
 
 ### 인접 행렬(Adjacency Matrix)
@@ -42,7 +42,7 @@ E : 간선 집합
 
 - 그래프의 정점의 수가 N → N x N 크기의 행렬
 - 원소 (i, j)로 표현:
-    - • 원소 (i, j) == 1 : 정점 i 와 정점 j 사이에 간선이 있음 (인접함)
+    - • 원소 (i, j) == 1 : 정점 i 와 정점 j 사이에 간선이 있음 (인접함) <br />
     • 원소 (i, j) == 0 : 정점 i 와 정점 j 사이에 간선이 없음 (인접 X)
         
         ![image](https://user-images.githubusercontent.com/76686872/171328735-9c5d0515-3c9c-4177-b615-9a408eb6103e.png)
@@ -68,15 +68,15 @@ E : 간선 집합
 - i번째 리스트는 정점 i에 인접한 정점들을 리스트로 연결
     - 무향 그래프에서 총 간선 수의 두 배의 항목으로 표현
         
-        ![image](https://user-images.githubusercontent.com/76686872/171328888-2a360d09-138e-4173-90f8-50baad9c39bf.png)
+        <img width=800px src="https://user-images.githubusercontent.com/76686872/171328888-2a360d09-138e-4173-90f8-50baad9c39bf.png"/>
         
     - 유향 그래프에서 간선 하나 당 항목 하나씩 필요
         
-        ![image](https://user-images.githubusercontent.com/76686872/171328931-0e51ee5c-944c-4478-a72e-5bffc3e17282.png)
+        <img width=800px src="https://user-images.githubusercontent.com/76686872/171328931-0e51ee5c-944c-4478-a72e-5bffc3e17282.png"/>
         
 - 가중치 (Weighted) 있는 그래프의 경우: 리스트에 가중치 (Weight)도 보관
     
-    ![image](https://user-images.githubusercontent.com/76686872/171328961-4a51c941-39e8-4ab9-b4e1-f54fb1db55ef.png)
+    <img width=850px src="https://user-images.githubusercontent.com/76686872/171328961-4a51c941-39e8-4ab9-b4e1-f54fb1db55ef.png"/>
     
 - 인접 리스트 (Adjacency List) 장단점
     - 장점
@@ -206,3 +206,38 @@ E : 간선 집합
     6. 꺼낸 정점의 이웃들 중 리스트 done을 확인해서
     아직 추가된 적이 없는 정점을 골라 리스트 (todo) 와 리스트 (done)에 추가
     7. 리스트 todo 에 처리할 정점이 남아 있다면 4번 과정부터 다시 반복
+    ```python
+    def print_all_friends(graph, start):
+        todo = []
+        done = []
+
+        todo.append(start)
+        done.append(start)
+
+        while todo:
+            vertex = todo.pop()
+            print(vertex)
+            for x in graph[vertex]:
+                if x not in done:
+                    todo.append(x)
+                    done.append(x)
+
+    graph = {
+    1: [2, 3],
+    2: [4, 5],
+    3: [4, 6],
+    4: [5, 7],
+    5: [7],
+    6: [7],
+    7: []
+    }
+
+    print_all_friends(graph, 1)
+    # 1
+    # 3
+    # 6
+    # 7
+    # 4
+    # 5
+    # 2
+    ```
