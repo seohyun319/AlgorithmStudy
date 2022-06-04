@@ -12,6 +12,10 @@ for _ in range(m):
     graph[x].append(y)
     graph[y].append(x)
 
+# 문제 조건: 방문할 수 있는 정점이 여러 개면 작은 노드부터 방문해야 해서 정렬 해줘야함
+# 이거 안 정해줘서 틀렸음
+for i in range(len(graph)):
+    graph[i].sort()
 
 def dfs(start):
     # 현재 노드 방문
